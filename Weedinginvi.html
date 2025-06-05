@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emma & Noah - Save the Date!</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f6;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #a94442;
+    }
+
+    .row-container {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    header, section {
+      flex: 0 0 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+      padding: 2rem;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    header {
+      background: url('https://michaelwillphotography.com/wp-content/uploads/2016/01/best-wedding-photos-pittsburgh-172-1.jpg') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 3rem;
+      color: black;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 0.5rem;
+      color: rgb(255, 251, 251);
+      background: none;
+      padding: 0;
+      border-radius: 0;
+      font-weight: 700;
+      border-color: #000000;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .countdown {
+      font-size: 2rem;
+      margin: 1rem 0;
+      color: #ffffff;
+      background: none;
+      padding: 0;
+      border-radius: 0;
+      font-weight: 700;
+      border-color: #000000;
+      text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .highlight-text {
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      font-size: 3rem;
+      background: none;
+      padding: 0;
+      border-radius: 0;
+      margin-top: 1rem;
+      font-weight: 700;
+      border-color: #000000;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .info p, .story p {
+      margin: 0.5rem 0;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 90%;
+      max-width: 300px;
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #a94442;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #842f2f;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      background: #fff;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">E&N</a>
+  <a href="#info">Details</a>
+  <a href="#story">Our Story</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#rsvp">RSVP</a>
+</nav>
+
+<div class="row-container">
+  <header id="home">
+    <h1>Emma & Noah</h1>
+    <p class="highlight-text">We're getting married!</p>
+    <div class="countdown" id="countdown"></div>
+  </header>
+
+  <section id="info" class="info">
+    <h2>Wedding Details</h2>
+    <p><strong>Date:</strong> December 20, 2025</p>
+    <p><strong>Time:</strong> 4:00 PM</p>
+    <p><strong>Venue:</strong> Rosewood Garden, Napa Valley</p>
+    <p><strong>Dress Code:</strong> Formal</p>
+  </section>
+
+  <section id="story" class="story">
+    <h2>Our Love Story</h2>
+    <p>We met in college, shared our first date over coffee, and 5 years later... here we are!</p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Photo Gallery</h2>
+    <img src="https://michaelwillphotography.com/wp-content/uploads/2016/01/best-wedding-photos-pittsburgh-172-1.jpg" alt="Wedding photo 1" />
+    <img src="https://www.weddingchicks.com/wp-content/uploads/2023/03/kellymariephotography_garrisonnoel588-1.jpg" alt="Wedding photo 2" />
+    <img src="https://www.moltobellaweddings.com/wp-content/uploads/2021/05/RAEGAN-AND-RYAN-27.jpg" alt="Wedding photo 3" />
+  </section>
+
+<section id="rsvp" class="rsvp">
+  <h2>RSVP</h2>
+  <form action="https://getform.io/f/allzqjea" method="POST">
+    <!-- Email subject line -->
+    <input type="hidden" name="_subject" value="RSVP Confirmation" />
+    
+    <!-- Redirect after submission (optional) -->
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html" />
+    
+    <!-- Form inputs -->
+    <input type="text" name="name" placeholder="Your Full Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message"></textarea>
+    
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+    <p>Please message us if you come in my wedding day!! thank you for you love and support to our wedding❤️❤️</p>
+  </form>
+</section>
+
+
+</div>
+
+<footer>
+  <p>Thanks for celebrating with us! 💕</p>
+  <p><em>Share this link with friends & family!</em></p>
+</footer>
+
+<script>
+  // Countdown Timer
+  const countdownEl = document.getElementById("countdown");
+  const weddingDate = new Date("2025-12-20T16:00:00").getTime();
+  const updateCountdown = () => {
+    const now = new Date().getTime();
+    const gap = weddingDate - now;
+    if (gap < 0) {
+      countdownEl.textContent = "It's our big day!";
+      return;
+    }
+    const days = Math.floor(gap / (1000 * 60 * 60 * 24));
+    countdownEl.textContent = `Countdown: ${days} days to go!`;
+  };
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
